@@ -1,0 +1,13 @@
+#IMPEDIR LISTADO DE DIRECTORIO
+
+Options All -Indexes
+
+#URLS AMIGABLES
+#ACTIVAR REWRITEENGINE
+
+RewriteEngine on
+
+RewriteRule ^(\w+)$ index.php?action=$1
+
+#RewriteRule ^([^/]+)/(\d+)$ index.php?action=$1&id=$2  
+#RewriteRule ^(.*)$ index.php?action=$1 [NC]
